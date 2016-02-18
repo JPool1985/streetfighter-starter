@@ -1,12 +1,28 @@
 body {
-  background-color: black;
+	background-color: black;
 }
 .main {
-  background-color: white;
-  margin-top: 110px;
-  padding-left: 100px;
-  min-width: 1200px;
-  height: 500px;
-  position: relative;
-  z-index: 1;
+	background-color: white;
+	margin-top: 110px;
+	padding-left: 100px;
+	min-width: 1200px;
+	height: 500px;
+	position: relative;
+	z-index: 1;
+}
+#volume-control {
+	position: fixed;
+	width: 5em;
+	height: 5em;
+	top: 1em;
+	right: 3em;
+	text-align: center;
+}
+.volume-control-off, .volume-control-on {
+	font-size: 5em !important;
+	color: white;
+	display: none !important;
+}
+#volume-control .active {
+	display: block !important;
 }
