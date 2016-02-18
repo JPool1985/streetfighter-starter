@@ -1,0 +1,16 @@
+#volume-control {
+	position: fixed;
+	width: 5em;
+	height: 5em;
+	top: 1em;
+	right: 3em;
+	text-align: center;
+}
+.volume-control-off, .volume-control-on {
+	font-size: 5em !important;
+	color: white;
+	display: none !important;
+}
+#volume-control .active {
+	display: block !important;
+}
