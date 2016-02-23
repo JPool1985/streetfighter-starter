@@ -3,7 +3,7 @@ $("#volume-control").on("click",function(){
 	console.log("volume control clicked");
 	$("#volume-control i").removeClass("active");
 	if(true==isVolumeOn){
-		$(".volume-control-off").addClass("active");
+		$(".volume-control-on").addClass("active");
 		isVolumeOn=false;
 	}
 	else {
@@ -12,3 +12,5 @@ $("#volume-control").on("click",function(){
 	}
 	// body...
 })
+$('.ryu-ready').hide();
+$('.ryu-still').show();
