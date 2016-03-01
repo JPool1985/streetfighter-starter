@@ -12,5 +12,3 @@ $("#volume-control").on("click",function(){
 	}
 	// body...
 })
-$('.ryu-ready').hide();
-$('.ryu-still').show();
