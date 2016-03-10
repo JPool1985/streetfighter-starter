@@ -27,12 +27,20 @@ $(document).ready(function() {
 		$('.ryu-ready').show();
 	});
   // animate hadouken to the right of the screen
-})
-
+});
+$(document).on("keyup",function(e){
+	if (e.keyCode == 88){
+		playCool();
+	}
+	function playCool(){
+		$(".ryu div").hide();
+		$(".ryu-cool").show();
+	}
     // play hadouken sound
     // show hadouken and animate it to the right of the screen
     function playHadouken () {
     	$('#hadouken-sound')[0].volume = 0.5;
     	$('#hadouken-sound')[0].load();
     	$('#hadouken-sound')[0].play();
-    }
+    });
+
