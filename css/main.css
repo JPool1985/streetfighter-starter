@@ -1,5 +1,10 @@
+@font-face{
+  font-family: jake-font;
+  src: url("./../fonts/Sweetly Broken.ttf")
+}
 body {
-	background-color: black;
+  font-family: jake-font;
+  background-color: black;
 }
 .main {
 	background-color: white;
@@ -11,10 +16,10 @@ body {
 	z-index: 1;
 }
 .ryu {
-    width: 659px;
-    height: 494px;
-    float: left;
-    position: static;
+  width: 659px;
+  height: 494px;
+  float: left;
+  position: static;
 }
 
 .ryu-ready, .ryu-still, .ryu-throwing, .ryu-cool{
@@ -22,7 +27,7 @@ body {
   height: 494px;
 }
 
-.ryu-ready, .ryu-throwing, .ryu-cool{
+.ryu-throwing, .ryu-cool{
   display: none;
 } 
 
@@ -63,9 +68,26 @@ body {
   height: 425px;
   width: 600px;
   padding-top: 75px;
+  top: 200px;
+  z-index: 2;
 }
-.how-to{
-
+.sf-logo {
+  background-image: url('../images/sf-logo.png');
+  width: 682px;
+  height: 314px;
+  display: none;
+}
+.jquery-logo {
+  background-image: url('../images/jquery-logo.png');
+  width: 500px;
+  height: 172px;
+  display: none;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.brought-by, .how-to{
+  display: none;
 }
 .how-to p {
   width: 50%;
@@ -75,5 +97,6 @@ body {
 }
 
 .how-to p + p {
-  margin-left: 275px;
+  margin-left: 165px;
+  display: none;
 }
